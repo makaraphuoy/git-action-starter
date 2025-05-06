@@ -30,9 +30,8 @@ jobs:
 
     - name: Build with Maven
       run: mvn clean install
-
-    - name: Run tests
-      run: mvn test
+      # - name: Run tests
+      #   run: mvn test
 
     - name: Run Spring Boot App
       run: nohup mvn spring-boot:run &
